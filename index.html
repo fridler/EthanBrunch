@@ -72,7 +72,7 @@
   </head>
   <body>
     <div>
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSdjhVP_wMU5vtaId216n9R_IBVilhH5QAU_JtaXMjOvNZAJBw/formResponse" method="POST" target="_blank">
+      <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdjhVP_wMU5vtaId216n9R_IBVilhH5QAU_JtaXMjOvNZAJBw/formResponse" method="POST" onsubmit="submitForm(event)">
         <h1>הבראנץ' של איתן</h1>
 
         <label for="fullName">שם מלא:</label>
@@ -94,7 +94,27 @@
 
         <button type="submit">שלח</button>
       </form>
+      <div id="thankYou" style="display: none; text-align: center">
+        <h2>תודה על השליחה!</h2>
+      </div>
       <img src="https://i.ibb.co/2tWkbX7/Whats-App-Image-2024-03-03-at-21-16-53.jpg" alt="תמונת הזמנה" />
     </div>
+
+    <script>
+      function submitForm(event) {
+        event.preventDefault();
+
+        var form = document.getElementById("myForm");
+        var formData = new FormData(form);
+
+        fetch(form.action, {
+          method: form.method,
+          body: formData,
+        }).finally(() => {
+          document.getElementById("myForm").style.display = "none";
+          document.getElementById("thankYou").style.display = "block";
+        });
+      }
+    </script>
   </body>
 </html>
