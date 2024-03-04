@@ -12,3 +12,11 @@ function submitForm(event) {
     document.getElementById("thankYou").style.display = "block";
   });
 }
+
+function showForm() {
+  var buttonContainer = document.getElementById("buttonContainer");
+  buttonContainer.style.display = "none";
+
+  var myForm = document.getElementById("myForm");
+  myForm.style.display = "block";
+}
