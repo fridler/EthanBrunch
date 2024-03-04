@@ -53,7 +53,6 @@ button:hover {
   background-color: #45a049;
 }
 img {
-  max-width: 80vw;
   margin-top: 20px;
   background-color: #fff;
   padding: 20px;
@@ -61,8 +60,11 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #6c757d;
 }
+.img-fluid {
+  width: 100%;
+}
 #myForm {
-  display: none; /* הטופס יהיה מוסתר בתחילה */
+  display: none;
   border: 1px solid #6c757d;
 }
 #buttonContainer {
