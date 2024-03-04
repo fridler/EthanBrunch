@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>הבראנץ' של איתן</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdjhVP_wMU5vtaId216n9R_IBVilhH5QAU_JtaXMjOvNZAJBw/formResponse" method="POST" onsubmit="submitForm(event)">
+        <h1>הבראנץ' של איתן</h1>
+
+        <label for="fullName">שם מלא:</label>
+        <input type="text" id="fullName" name="entry.654247113" required />
+
+        <label for="numAttendees">כמה תגיעו?</label>
+        <select id="numAttendees" name="entry.1054746315" required>
+          <option value="" disabled selected>בחר כמות</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+
+        <button type="submit">שלח</button>
+      </form>
+      <div id="thankYou" style="display: none; text-align: center">
+        <h2>תודה על השליחה!</h2>
+      </div>
+      <img src="https://i.ibb.co/2tWkbX7/Whats-App-Image-2024-03-03-at-21-16-53.jpg" alt="תמונת הזמנה" />
+    </div>
+  </body>
+</html>
