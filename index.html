@@ -18,27 +18,54 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="d-grid gap-2 col-10 mx-auto">
-      <h1 class="text-center p-3">הבראנץ' של איתן</h1>
-
-      <a href="index2.html" class="btn btn-outline-secondary btn-square-md" role="button">
-        <i class="fa-solid fa-check fa-4x"></i>
-        <h4 style="margin-top: 0.25em">אשר הגעה</h4></a
-      >
-      <a href="waze://?ll=32.077751,34.787057&navigate=yes" class="btn btn-outline-secondary btn-square-md" role="button">
-        <i class="fa-brands fa-waze fa-4x"></i>
-        <h4 style="margin-top: 0.25em">ניווט ליעד</h4>
-      </a>
-
-      <img class="img-fluid" src="https://i.ibb.co/2tWkbX7/Whats-App-Image-2024-03-03-at-21-16-53.jpg" alt="תמונת הזמנה" />
-    </div>
-
+    <script src="script.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+  </head>
+  <body>
+    <div class="d-grid gap-2 col-10 mx-auto">
+      <h1 class="text-center p-3">הבראנץ' של איתן</h1>
+      <div id="buttonContainer">
+        <a href="javascript:void(0);" onclick="showForm()" class="btn btn-outline-secondary btn-square-md" role="button">
+          <i class="fa-solid fa-check fa-4x"></i>
+          <h4 style="margin-top: 0.25em">אשר הגעה</h4></a
+        >
+
+        <a href="waze://?ll=32.077751,34.787057&navigate=yes" class="btn btn-outline-secondary btn-square-md" role="button">
+          <i class="fa-brands fa-waze fa-4x"></i>
+          <h4 style="margin-top: 0.25em">ניווט ליעד</h4>
+        </a>
+      </div>
+
+      <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdjhVP_wMU5vtaId216n9R_IBVilhH5QAU_JtaXMjOvNZAJBw/formResponse" method="POST" onsubmit="submitForm(event)">
+        <label for="fullName">שם מלא:</label>
+        <input type="text" id="fullName" name="entry.654247113" required />
+
+        <label for="numAttendees">כמה תגיעו?</label>
+        <select id="numAttendees" name="entry.1054746315" required>
+          <option value="" disabled selected>בחר כמות</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+
+        <button type="submit">שלח</button>
+      </form>
+
+      <div id="thankYou" style="display: none; text-align: center">
+        <h2>!תודה</h2>
+      </div>
+
+      <img class="img-fluid" src="https://i.ibb.co/2tWkbX7/Whats-App-Image-2024-03-03-at-21-16-53.jpg" alt="תמונת הזמנה" />
+    </div>
   </body>
 </html>
