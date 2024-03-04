@@ -23,7 +23,9 @@ h1 {
   text-align: center;
   color: #333;
 }
-
+a {
+  width: 100%;
+}
 label {
   display: block;
   margin-bottom: 8px;
@@ -64,7 +66,7 @@ img {
   border: 1px solid #6c757d;
 }
 #buttonContainer {
-  display: contents;
+  display: flex;
 }
 
 .btn-square-md {
