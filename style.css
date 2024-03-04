@@ -57,12 +57,18 @@ img {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #6c757d;
 }
-div {
-  margin: 20px;
+#myForm {
+  display: none; /* הטופס יהיה מוסתר בתחילה */
+  border: 1px solid #6c757d;
+}
+#buttonContainer {
+  display: contents;
 }
 
 .btn-square-md {
+  background-color: white;
   max-width: 100% !important;
   max-height: 100% !important;
   height: 100px !important;
