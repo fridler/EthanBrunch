@@ -1,120 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>הבראנץ' של איתן</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        height: 100vh;
-        text-align: right;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      form {
-        max-width: 80vw;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        direction: rtl;
-      }
-
-      h1 {
+      .btn-square-md {
+        max-width: 100% !important;
+        max-height: 100% !important;
+        height: 100px !important;
         text-align: center;
-        color: #333;
-      }
-
-      label {
-        display: block;
-        margin-bottom: 8px;
-        color: #555;
-      }
-
-      input,
-      select {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 16px;
-        box-sizing: border-box;
-      }
-
-      button {
-        background-color: #4caf50;
-        color: #fff;
-        padding: 10px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background-color: #45a049;
-      }
-      img {
-        max-width: 80vw;
-        margin-top: 20px;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      div {
-        margin: 20px;
+        padding: 0px;
+        font-size: 12px;
       }
     </style>
   </head>
   <body>
-    <div>
-      <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdjhVP_wMU5vtaId216n9R_IBVilhH5QAU_JtaXMjOvNZAJBw/formResponse" method="POST" onsubmit="submitForm(event)">
-        <h1>הבראנץ' של איתן</h1>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <h1 class="text-center p-3">הבראנץ' של איתן</h1>
 
-        <label for="fullName">שם מלא:</label>
-        <input type="text" id="fullName" name="entry.654247113" required />
+      <a href="index.html" class="btn btn-outline-secondary btn-square-md" role="button">
+        <i class="fa-solid fa-check fa-4x"></i>
+        <h4 style="margin-top: 0.25em">אשר הגעה</h4></a
+      >
+      <a href="https://embed.waze.com/iframe?zoom=16&lat=32.077751&lon=34.787057&ct=livemap" class="btn btn-outline-secondary btn-square-md" role="button">
+        <i class="fa-brands fa-waze fa-4x"></i>
+        <h4 style="margin-top: 0.25em">ניווט ליעד</h4>
+      </a>
 
-        <label for="numAttendees">כמה תגיעו?</label>
-        <select id="numAttendees" name="entry.1054746315" required>
-          <option value="" disabled selected>בחר כמות</option>
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-        </select>
-
-        <button type="submit">שלח</button>
-      </form>
-      <div id="thankYou" style="display: none; text-align: center">
-        <h2>תודה על השליחה!</h2>
-      </div>
-      <img src="https://i.ibb.co/2tWkbX7/Whats-App-Image-2024-03-03-at-21-16-53.jpg" alt="תמונת הזמנה" />
+      <img class="img-fluid" src="https://i.ibb.co/2tWkbX7/Whats-App-Image-2024-03-03-at-21-16-53.jpg" alt="תמונת הזמנה" />
     </div>
 
-    <script>
-      function submitForm(event) {
-        event.preventDefault();
-
-        var form = document.getElementById("myForm");
-        var formData = new FormData(form);
-
-        fetch(form.action, {
-          method: form.method,
-          body: formData,
-        }).finally(() => {
-          document.getElementById("myForm").style.display = "none";
-          document.getElementById("thankYou").style.display = "block";
-        });
-      }
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
