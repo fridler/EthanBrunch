@@ -28,6 +28,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
   </head>
   <body>
     <div class="d-grid gap-2 col-10 mx-auto">
@@ -43,9 +44,15 @@
           <h4 style="margin-top: 0.25em">?מגיעים</h4>
         </a>
 
-        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=הבראנץ' של איתן&details=Event description text&dates=20240323T093000/20240323T123000&location=Pastel מוזיאון תל-אביב"
-          >Add to Google Calendar</a
-        >
+        <div title="Add to Calendar" class="addeventatc">
+          Add to Calendar
+          <span class="start">03/23/2024 09:30 AM</span>
+          <span class="end">03/23/2024 12:30 PM</span>
+          <span class="timezone">Asia/Jerusalem</span>
+          <span class="title">הבראנץ' של איתן</span>
+          <span class="description">בדיקה בדיקה</span>
+          <span class="location">Pastel - מוזיאון ת"א לאמנות</span>
+        </div>
       </div>
 
       <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdjhVP_wMU5vtaId216n9R_IBVilhH5QAU_JtaXMjOvNZAJBw/formResponse" method="POST" onsubmit="submitForm(event)">
