@@ -15,7 +15,9 @@ function submitForm(event) {
 
 function showForm() {
   var buttonContainer = document.getElementById("buttonContainer");
+  var buttonContainer1 = document.getElementById("buttonContainer1");
   buttonContainer.style.display = "none";
+  buttonContainer1.style.display = "none";
 
   var myForm = document.getElementById("myForm");
   myForm.style.display = "block";
