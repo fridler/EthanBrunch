@@ -28,7 +28,6 @@ a {
 label {
   display: block;
   margin-bottom: 8px;
-  color: #555;
 }
 
 input,
@@ -48,11 +47,8 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #45a049;
-}
 img {
-  margin-top: 20px;
+  margin: 20px 0;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -66,7 +62,8 @@ img {
   display: none;
   border: 1px solid #6c757d;
 }
-#buttonContainer {
+#buttonContainer,
+#buttonContainer1 {
   display: flex;
 }
 
@@ -78,4 +75,34 @@ img {
   text-align: center;
   padding: 0px;
   font-size: 12px;
+}
+
+.addeventatc:hover {
+  background-color: #6c757d !important;
+  color: #fff !important;
+}
+
+.addeventatc_icon {
+  display: none;
+}
+
+.addeventatc {
+  padding: 0px !important;
+  border-radius: 8px !important;
+}
+
+.btn-square-md {
+  font-size: 12px !important;
+  border: 1px solid #6c757d !important;
+}
+
+h4 {
+  font-family: Arial, sans-serif;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #000;
+}
+a {
+  box-shadow: 0 0 0 0.5px rgba(50, 50, 93, 0.17), 0 2px 5px 0 rgba(50, 50, 93, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 0 0 0 transparent !important;
 }
