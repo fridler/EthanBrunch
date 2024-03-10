@@ -34,25 +34,25 @@
     <div class="d-grid gap-2 col-10 mx-auto">
       <h1 class="text-center p-3">הבראנץ' של איתן</h1>
       <div id="buttonContainer">
-        <a href="waze://?ll=32.077751,34.787057&navigate=yes" class="btn btn-outline-secondary btn-square-md me-2" role="button">
-          <i class="fa-brands fa-waze fa-4x mt-2"></i>
-          <h4 style="margin-top: 0.25em">ניווט ליעד</h4>
-        </a>
-
-        <a href="javascript:void(0);" onclick="showForm()" class="btn btn-outline-secondary btn-square-md ms-2" role="button">
+        <a href="javascript:void(0);" onclick="showForm()" class="btn btn-outline-secondary btn-square-md" role="button">
           <i class="fa-solid fa-check fa-4x mt-2"></i>
           <h4 style="margin-top: 0.25em">?מגיעים</h4>
         </a>
-
-        <div title="Add to Calendar" class="addeventatc">
-          Add to Calendar
+      </div>
+      <div id="buttonContainer1">
+        <div title="Add to Calendar" class="addeventatc btn btn-outline-secondary btn-square-md me-2 w-100">
+          <i class="fa-regular fa-calendar fa-4x mt-2"></i>
+          <h4 style="margin-top: 0.25em">הוסף ליומן</h4>
           <span class="start">03/23/2024 09:30 AM</span>
           <span class="end">03/23/2024 12:30 PM</span>
           <span class="timezone">Asia/Jerusalem</span>
           <span class="title">הבראנץ' של איתן</span>
-          <span class="description">בדיקה בדיקה</span>
           <span class="location">Pastel - מוזיאון ת"א לאמנות</span>
         </div>
+        <a href="waze://?ll=32.077751,34.787057&navigate=yes" class="btn btn-outline-secondary btn-square-md ms-2" role="button">
+          <i class="fa-brands fa-waze fa-4x mt-2"></i>
+          <h4 style="margin-top: 0.25em">ניווט ליעד</h4>
+        </a>
       </div>
 
       <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdjhVP_wMU5vtaId216n9R_IBVilhH5QAU_JtaXMjOvNZAJBw/formResponse" method="POST" onsubmit="submitForm(event)">
